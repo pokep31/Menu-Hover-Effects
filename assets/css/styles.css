@@ -13,6 +13,41 @@ body{
   align-items: center;
   min-height: 100vh;
   background: #222;
+  cursor: none; /*quitamos el cursor, para que solamente se vea el creado con forma de círculo */
+}
+
+ul{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+ul li{
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  color: #555;
+  cursor: none;
+}
+ul li a span{
+  position: relative;
+  font-size: 2.5em;
+  letter-spacing: .05em;
+  transition: .25s;
+  text-transform: uppercase;
+}
+ul li:hover a span{
+  color: #fff;
+  text-shadow: 0 0 5px #fff,
+              0 0 15px #fff,
+              0 0 30px #fff,
+              0 0 60px #fff,
+              0 0 100px #fff;
 }
 
 #cursor{
